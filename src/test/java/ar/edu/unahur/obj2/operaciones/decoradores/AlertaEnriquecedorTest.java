@@ -28,8 +28,7 @@ public class AlertaEnriquecedorTest {
     void analisisMalwareNoAceptaLocalhost() {
 
         assertThrows( EnriquecimientoIncompatibleException.class,
-                () -> new AnalisisMalware(
-                        new Alerta("AL-001", "127.0.0.1", 20, 0)));
+                () -> new AnalisisMalware(new Alerta("AL-001", "127.0.0.1", 20, 0)));
     }
 
     @Test
