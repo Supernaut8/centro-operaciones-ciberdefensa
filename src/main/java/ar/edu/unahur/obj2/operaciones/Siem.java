@@ -11,7 +11,7 @@ public abstract class Siem {
 
     protected abstract IAlerta enriquercerAlerta(Alerta alerta);
 
-    public void asignarTrabajo(Analista analista) {
+    public final void asignarTrabajo(Analista analista) {
         Alerta alerta = buscarAlerta(analista);
         IAlerta alertaEnriquecida = enriquercerAlerta(alerta);
         analista.agregarAlerta(alertaEnriquecida);
@@ -23,6 +23,10 @@ public abstract class Siem {
                 .filter(alerta -> analista.getCriterio().cumpleCriterio(alerta))
                 .findFirst()
                 .orElse(null);
+    }
+
+    public void agregarAlerta(Alerta alerta) {
+        alertasPendientes.add(alerta);
     }
     
 }

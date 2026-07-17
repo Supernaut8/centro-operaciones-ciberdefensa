@@ -33,4 +33,13 @@ public class Analista {
         historialDeAlertas.add(alerta);
     }
 
+    public String getLegajo() {
+        return legajo;
+    }
+
+    public List<IAlerta> getHistorialDeAlertas() {
+        return historialDeAlertas;
+    }
+
+    
 }
