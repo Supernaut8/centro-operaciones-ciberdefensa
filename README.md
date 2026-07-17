@@ -5,9 +5,9 @@
 
 ## **⚙️ Datos necesarios y obligatorios a completar.**
 
-* **APELLIDO, NOMBRE**:  
-* **COMISIÓN**:  
-* **DNI**:
+* **Roces, Guido Nicolás**:  
+* **COMISIÓN 3**:  
+* **DNI: 32140509**:
 
 ## **📝 Consideraciones Iniciales y Criterio de Evaluación.**
 
