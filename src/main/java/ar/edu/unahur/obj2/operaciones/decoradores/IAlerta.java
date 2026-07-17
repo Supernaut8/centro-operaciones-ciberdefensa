@@ -5,6 +5,6 @@ public interface IAlerta {
     Integer getSeveridadTotal();
     String getCodigo();
     String getIp();
-    IAlerta getTiempo();
+    Integer getTiempo();
 
 }

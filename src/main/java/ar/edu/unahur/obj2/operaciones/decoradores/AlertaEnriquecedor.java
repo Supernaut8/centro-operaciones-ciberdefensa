@@ -19,7 +19,7 @@ public abstract class AlertaEnriquecedor implements IAlerta {
     }
 
     @Override
-    public IAlerta getTiempo() {
+    public Integer getTiempo() {
         return alerta.getTiempo();
     }
 

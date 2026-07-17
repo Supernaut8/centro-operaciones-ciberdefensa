@@ -1,0 +1,14 @@
+package ar.edu.unahur.obj2.operaciones.plantillas;
+
+import ar.edu.unahur.obj2.operaciones.Alerta;
+import ar.edu.unahur.obj2.operaciones.Siem;
+import ar.edu.unahur.obj2.operaciones.decoradores.IAlerta;
+
+public class SiemRapido extends Siem {
+
+    @Override
+    protected IAlerta enriquercerAlerta(Alerta alerta) {
+        return alerta;
+    }    
+
+}
